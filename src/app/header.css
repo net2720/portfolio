@@ -1,0 +1,11 @@
+/*기본적으로 헤더와 푸터는 동일하게 CSS를 제작할 계획이지만
+한 페이지에 모든 것을 담을 계획이라 공통 상수나 공통 컴퍼넌트를
+만들 계획은 없음.
+*/
+
+.header {
+  background-color: #d9d9d9;
+  color: #222222;
+  opacity: 60%;
+  display: flex;
+}
