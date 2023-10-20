@@ -1,5 +1,18 @@
 .aboutMe {
-  height: 100px;
+  height: 600px;
   background-color: #121212;
   color: #ffffff;
+  text-align: center;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.formName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formValue {
 }
