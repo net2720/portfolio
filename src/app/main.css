@@ -10,8 +10,8 @@
   text-align: center;
 }
 
-.mainTag {
-  padding-top: 60px;
+/*.mainTag {
+  padding-top: 100px;
   font-family: sans-serif;
   font-size: 40px;
   font-weight: bold;
@@ -24,8 +24,9 @@
 }
 
 .introduce {
-  font-size: 20px;
+  font-size: 16px;
   font-family: fantasy;
   font-weight: 100;
   line-height: 1.5;
-}
+  margin: 0 5% 0 5%;
+}*/

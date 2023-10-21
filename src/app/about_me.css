@@ -1,18 +1,37 @@
 .aboutMe {
-  height: 600px;
+  min-height: 110vh;
   background-color: #121212;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
-.form {
-  margin-top: 30px;
+h1 {
+  padding-top: 60px;
+  font-size: 60px;
+}
+
+.gridItem {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 91%;
+  color: #000;
+}
+
+.formBoxes {
+  background-color: #ddd;
+  height: 100px;
+  margin-top: 40px;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .formName {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .formValue {
+  margin-top: 10px;
 }
