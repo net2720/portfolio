@@ -1,5 +1,7 @@
 import './about_me.css';
 import { Grid } from '@mui/material';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutMe() {
   return (
@@ -9,33 +11,37 @@ export default function AboutMe() {
         <Grid container spacing={4} className="gridItem">
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">
-              <div className="formName">이름</div>
-              <div className="formValue">노은탁</div>
+              <Image src="/Person.png" alt="person" width={240} height={117} />
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">
-              <div className="formName">생년월일</div>
-              <div className="formValue">1990.12.16</div>
+              <Image
+                src="/BirthdayCake.png"
+                alt="BirthdayCake"
+                width={240}
+                height={117}
+              />
             </div>
           </Grid>
 
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">
-              <div className="formName">이메일</div>
-              <div className="formValue">popcron13@gmail.com</div>
+              <Image src="/Email.png" alt="Email" width={240} height={117} />
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">
-              <div className="formName">연락처</div>
-              <div className="formValue">010-5490-4147</div>
+              <Link href="tel:010-5490-4147" target="_blank">
+                <Image src="/Phone.png" alt="Phone" width={240} height={117} />
+              </Link>
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">
-              <div className="formName">Git</div>
-              <div className="formValue">github.com/net2720</div>
+              <Link href="https://github.com/net2720" target="_blank">
+                <Image src="/Git.png" alt="Git" width={240} height={117} />
+              </Link>
             </div>
           </Grid>
         </Grid>
