@@ -77,13 +77,13 @@
 }
 
 .deploymentFrame {
-  background-color: #ffffd3;
+  background-color: #ededa7;
   width: 80%;
   margin-bottom: 40px;
   margin-left: 10%;
   font-size: 40px;
   font-weight: 600;
-  color: #dddd43;
+  color: #999927;
   border-radius: 20px;
 }
 
@@ -94,7 +94,7 @@
 .deploymentBorder {
   width: 100%;
   height: 1px;
-  background-color: #dddd43;
+  background-color: #999927;
 }
 
 .deploymentContent {
