@@ -7,7 +7,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="aboutMe">
-        <h1>Netpo</h1>
+        <div className="title">Netpo</div>
         <Grid container spacing={4} className="gridItem">
           <Grid item xs={12} sm={6} md={4}>
             <div className="formBoxes">

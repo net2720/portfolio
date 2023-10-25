@@ -4,11 +4,11 @@ export default function Main() {
   return (
     <>
       <div className="main">
-        <h1 className="mainTag">
+        <div className="mainTag">
           노은탁
           <br />
           portfolio
-        </h1>
+        </div>
         <p className="bar">-</p>
         <p className="introduce">
           안녕하세요!
