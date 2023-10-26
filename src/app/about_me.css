@@ -1,18 +1,27 @@
 .aboutMe {
-  height: 600px;
+  height: 550px;
   background-color: #121212;
   color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 900px) {
+.maxWidth {
+  max-width: 900px;
+}
+
+@media (max-width: 899.9px) {
   .aboutMe {
-    height: 750px;
+    height: 700px;
+  }
+  .gridItem {
+    width: 600px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 599.9px) {
   .aboutMe {
-    height: 1100px;
+    height: 1050px;
   }
 }
 

@@ -17,8 +17,8 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Projects />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
