@@ -13,10 +13,10 @@ export default function Skills() {
             <div className="frontendBorder"></div>
             <Grid className="frontendContent" container spacing={2}>
               <Grid item xs={6} sm={4} md={2}>
-                <Image src="/Html.png" alt="Html" width={96} height={96} />
+                <Image src="/HTML.png" alt="HTML" width={96} height={96} />
               </Grid>
               <Grid item xs={6} sm={4} md={2}>
-                <Image src="/Css.png" alt="Css" width={96} height={96} />
+                <Image src="/CSS.png" alt="CSS" width={96} height={96} />
               </Grid>
               <Grid item xs={6} sm={4} md={2}>
                 <Image
