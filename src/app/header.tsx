@@ -3,7 +3,6 @@ import './header.css';
 import { useState } from 'react';
 
 export default function Header() {
-  //const [menuHover, setMenuHover] = useState(false);
   const [openMenuIconState, setOpenMenuIconState] = useState(false);
 
   function handlePopUpToggle() {
@@ -23,14 +22,32 @@ export default function Header() {
             <div className="menu">Skills</div>
             <div className="menu">Projects</div>
           </div>
-          <button className="menuIcon" onClick={handlePopUpToggle}>
+          <button
+            className={openMenuIconState ? 'menuIconClicked' : 'menuIcon'}
+            onClick={handlePopUpToggle}
+          >
             <div className="iconText">Menu</div>
           </button>
           {openMenuIconState ? (
-            <div>
-              <div onClick={scrollMoveAndClosePopUp}>About Me</div>
-              <div onClick={scrollMoveAndClosePopUp}>Skills</div>
-              <div onClick={scrollMoveAndClosePopUp}>Projects</div>
+            <div className="underSideMenu">
+              <div
+                className="underSideMenuContents"
+                onClick={scrollMoveAndClosePopUp}
+              >
+                About Me
+              </div>
+              <div
+                className="underSideMenuContents"
+                onClick={scrollMoveAndClosePopUp}
+              >
+                Skills
+              </div>
+              <div
+                className="underSideMenuContents"
+                onClick={scrollMoveAndClosePopUp}
+              >
+                Projects
+              </div>
             </div>
           ) : (
             <></>

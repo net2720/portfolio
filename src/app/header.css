@@ -51,10 +51,6 @@
   color: #777;
 }
 
-.menuIcon {
-  color: #d9d9d9;
-}
-
 @media (max-width: 699.9px) {
   .menuForm {
     display: none;
@@ -80,5 +76,59 @@
   .iconText {
     font-size: 24px;
     font-weight: 600;
+  }
+  .menuIconClicked {
+    width: 90px;
+    height: 40px;
+    background-color: #222;
+    color: #d9d9d9;
+    position: absolute;
+    top: 8px;
+    right: 32px;
+    border: 2px solid #666;
+    border-radius: 12px;
+    box-shadow: 1px 1px 2px #000;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .menuIconClicked:hover {
+    background-color: #b9b9b9;
+    color: #474747;
+  }
+
+  .underSideMenu {
+    display: flex;
+    position: absolute;
+    padding: 12px;
+    top: 63px;
+    right: 24px;
+    background-color: #d9d9d9;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #b1b1b1;
+    border-radius: 8px;
+    opacity: 0.8;
+  }
+  .underSideMenuContents {
+    color: #333;
+    margin: 3px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .underSideMenuContents:hover {
+    color: #666;
+    text-shadow: 1px 1px 2px #000;
+  }
+}
+
+@media (min-width: 700px) {
+  .menuIcon {
+    display: none;
+  }
+  .menuIconClicked {
+    display: none;
+  }
+  .underSideMenu {
+    display: none;
   }
 }
