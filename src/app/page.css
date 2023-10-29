@@ -1,0 +1,14 @@
+.toTheTopButton {
+  display: flex;
+  position: fixed;
+  border: none;
+  background: none;
+  outline: none;
+  bottom: 40px;
+  right: 30px;
+  opacity: 0.7;
+}
+
+.invisable {
+  display: none;
+}

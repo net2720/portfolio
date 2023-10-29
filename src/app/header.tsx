@@ -9,18 +9,60 @@ export default function Header() {
     setOpenMenuIconState(!openMenuIconState);
   }
 
-  function scrollMoveAndClosePopUp() {
+  function scrollMoveAndClosePopUp(componentId: string) {
+    const element = document.getElementById(componentId);
+    if (element) {
+      const currentPosition = window.scrollY;
+      const targetPosition =
+        element.getBoundingClientRect().top + currentPosition - 50;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      });
+    }
     setOpenMenuIconState(false);
   }
+
+  function handleToTheTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div className="header">
         <div className="headerContents">
-          <div className="headerTitle">{`Netpo's portfolio`}</div>
+          <button
+            className="headerTitle"
+            onClick={handleToTheTop}
+          >{`Netpo's portfolio`}</button>
           <div className="menuForm">
-            <div className="menu">About Me</div>
-            <div className="menu">Skills</div>
-            <div className="menu">Projects</div>
+            <button
+              className="menu"
+              onClick={() => {
+                scrollMoveAndClosePopUp('aboutMePage');
+              }}
+            >
+              About Me
+            </button>
+            <button
+              className="menu"
+              onClick={() => {
+                scrollMoveAndClosePopUp('skillsPage');
+              }}
+            >
+              Skills
+            </button>
+            <button
+              className="menu"
+              onClick={() => {
+                scrollMoveAndClosePopUp('projectsPage');
+              }}
+            >
+              Projects
+            </button>
           </div>
           <button
             className={openMenuIconState ? 'menuIconClicked' : 'menuIcon'}
@@ -30,24 +72,30 @@ export default function Header() {
           </button>
           {openMenuIconState ? (
             <div className="underSideMenu">
-              <div
+              <button
                 className="underSideMenuContents"
-                onClick={scrollMoveAndClosePopUp}
+                onClick={() => {
+                  scrollMoveAndClosePopUp('aboutMePage');
+                }}
               >
                 About Me
-              </div>
-              <div
+              </button>
+              <button
                 className="underSideMenuContents"
-                onClick={scrollMoveAndClosePopUp}
+                onClick={() => {
+                  scrollMoveAndClosePopUp('skillsPage');
+                }}
               >
                 Skills
-              </div>
-              <div
+              </button>
+              <button
                 className="underSideMenuContents"
-                onClick={scrollMoveAndClosePopUp}
+                onClick={() => {
+                  scrollMoveAndClosePopUp('projectsPage');
+                }}
               >
                 Projects
-              </div>
+              </button>
             </div>
           ) : (
             <></>

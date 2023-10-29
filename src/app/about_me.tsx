@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function AboutMe() {
   return (
     <>
-      <div className="aboutMe">
+      <div className="aboutMe" id="aboutMePage">
         <div className="maxWidth">
           <div className="title">About Me</div>
           <Grid container spacing={4} className="gridItem">
