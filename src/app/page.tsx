@@ -24,7 +24,7 @@ export default function Home() {
         } else {
           setShowToTheTopButton(false);
         }
-      }, 200);
+      }, 10);
     };
 
     window.addEventListener('scroll', handleScroll);
