@@ -20,12 +20,14 @@ export default function Projects() {
     };
   }, []);
 
-  let portfolioSnapshot = '/PortfolioSnapshot.png';
+  let portfolioSnapshot = '/PortfolioSnapshotPC.png';
+  let iloveRefactor = '/iloveRefactorPC.png';
   let imageWidth = 240;
   let imageHeight = 320;
 
   if (screenWidth < 900) {
-    portfolioSnapshot = '/PortfolioSnapshot2.png';
+    portfolioSnapshot = '/PortfolioSnapshotMobile.png';
+    iloveRefactor = '/iloveRefactorMobile.png';
     imageWidth = 320;
     imageHeight = 240;
   }
@@ -43,7 +45,7 @@ export default function Projects() {
               >
                 <Image
                   src={portfolioSnapshot}
-                  alt="PortfolioSnapshot"
+                  alt="portfolioSnapshot"
                   width={imageWidth}
                   height={imageHeight}
                 />
@@ -73,6 +75,87 @@ export default function Projects() {
                 <div className="stackTitle">사용한 기술</div>
                 <div className="stacks">
                   NextJS, TypeScript, HTML, CSS, Vercel
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projectContainer">
+          <div className="projectForm">
+            <div className="projectImage">
+              <Link href="https://tdcnext.vercel.app/" target="_blank">
+                <Image
+                  src="/tdcNextSnapshot.png"
+                  alt="tdcNext"
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </Link>
+            </div>
+            <div className="line"></div>
+            <div className="projectIntroduceForm">
+              <div className="projectTitle">NextJS Todo-list</div>
+              <div className="projectIntroduce">
+                NextJS를 익히기 위해서 제작한 토이프로젝트입니다.
+                <br />
+                <br />
+                NextJS 환경에서는 페이지와 서버를 한번에 구현할 수 있다는 점을
+                이용하여 DB와 연동하여 스스로의 TASK를 정하기 위해 제작중입니다.
+                <br />
+                <br />
+                해당 프로젝트는 완성을 목표로 하기 보다는 제 개인이 언제든지
+                편하게 사용하기 위하여 계속 업데이트 될 예정입니다.
+                <br />
+                <br />
+                현재 AJAX 통신과 DB 연동은 마친 상태이며 추후 AWS를 이용하여 더
+                원활하게 바꿀 계획이며 CSS를 수정하여 UI를 더 보기좋게 바꿀
+                예정입니다.
+              </div>
+              <div className="stackForm">
+                <div className="stackTitle">사용한 기술</div>
+                <div className="stacks">
+                  NextJS, TypeScript, HTML, MySQL, Vercel
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projectContainer">
+          <div className="projectForm">
+            <div className="projectImage">
+              <Link href="http://125.188.246.81:3000" target="_blank">
+                <Image
+                  src={iloveRefactor}
+                  alt="iloveRefactor"
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </Link>
+            </div>
+            <div className="line"></div>
+            <div className="projectIntroduceForm">
+              <div className="projectTitle">아이사랑 리팩토링</div>
+              <div className="projectIntroduce">
+                부트캠프 당시 2차 프로젝트 이후 2인 협업하여 리팩토링한 프로젝트
+                입니다.
+                <br />
+                <br />
+                기존에 페이지 부분을 JavaScript로 제작하였기 때문에 우선적으로
+                TypeScript를 채택하여 일부 페이지 리팩토링을 진행하였습니다.
+                <br />
+                <br />
+                기존 프로젝트 당시 Back-end Part를 담당하였기 때문에 페이지를
+                구현하기 위함이 가장 컸으며 React를 익히고 적용하는 데 초점을
+                두었습니다.
+                <br />
+                <br />
+                담당한 페이지는 메인 페이지, 병원 정보 페이지, 내 정보 페이지를
+                담당하였으며 일부 서버 코드 변경 및 개인 DB를 이용 중입니다.
+              </div>
+              <div className="stackForm">
+                <div className="stackTitle">사용한 기술</div>
+                <div className="stacks">
+                  HTML, CSS, React, TypeScript, NestJS, MySQL
                 </div>
               </div>
             </div>

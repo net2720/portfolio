@@ -1,5 +1,5 @@
 .projects {
-  height: 800px;
+  height: 2000px;
   background-color: #7c7c7c;
   color: #ffffff;
   display: flex;
@@ -73,7 +73,7 @@
 .stackTitle {
   position: absolute;
   color: #333;
-  bottom: 150px;
+  bottom: 130px;
   font-size: 25px;
   font-weight: 600;
 }
@@ -81,13 +81,13 @@
 .stacks {
   position: absolute;
   color: #000;
-  bottom: 110px;
+  bottom: 90px;
   font-size: 15px;
 }
 
 @media (max-width: 899.9px) {
   .projects {
-    height: 1100px;
+    height: 2900px;
   }
 
   .projectContainer {
@@ -121,8 +121,6 @@
 }
 
 @media (max-width: 699.9px) {
-  .projects {
-  }
   .projectContainer {
     width: 440px;
   }
