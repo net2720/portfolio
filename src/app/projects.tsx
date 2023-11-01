@@ -10,12 +10,17 @@ export default function Projects() {
         <div className="projectContainer">
           <div className="projectForm">
             <div className="projectImage">
-              <Image
-                src="/PortfolioSnapshot.png"
-                alt="PortfolioSnapshot"
-                width={240}
-                height={320}
-              />
+              <Link
+                href="https://portfolio-pi-ruddy-39.vercel.app/"
+                target="_blank"
+              >
+                <Image
+                  src="/PortfolioSnapshot.png"
+                  alt="PortfolioSnapshot"
+                  width={240}
+                  height={320}
+                />
+              </Link>
             </div>
             <div className="line"></div>
             <div className="projectIntroduceForm">
@@ -37,7 +42,12 @@ export default function Projects() {
                 또한 프로젝트가 생길 때마다 커리어와 포트폴리오를 갱신하기
                 위해서 계속 업데이트 될 예정입니다.
               </div>
-              <div className="stackForm">{/*Grid 쓸 예정*/}</div>
+              <div className="stackForm">
+                <div className="stackTitle">사용한 기술</div>
+                <div className="stacks">
+                  NextJS, TypeScript, HTML, CSS, Vercel
+                </div>
+              </div>
             </div>
           </div>
         </div>

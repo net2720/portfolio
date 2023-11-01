@@ -16,6 +16,7 @@
 
 .projectContainer {
   display: flex;
+  position: relative;
   justify-content: center;
   padding: 20px;
   max-width: 900px;
@@ -76,4 +77,23 @@
 .projectIntroduce {
   font-size: 15px;
   color: #000;
+}
+
+.stackForm {
+  display: flex;
+}
+
+.stackTitle {
+  position: absolute;
+  color: #333;
+  bottom: 150px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.stacks {
+  position: absolute;
+  color: #000;
+  bottom: 110px;
+  font-size: 15px;
 }
