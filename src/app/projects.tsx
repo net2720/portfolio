@@ -1,8 +1,35 @@
 import './projects.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 
 export default function Projects() {
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setScreenWidth(window.innerWidth);
+      }
+    };
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  let portfolioSnapshot = '/PortfolioSnapshot.png';
+  let imageWidth = 240;
+  let imageHeight = 320;
+
+  if (screenWidth < 900) {
+    portfolioSnapshot = '/PortfolioSnapshot2.png';
+    imageWidth = 320;
+    imageHeight = 240;
+  }
+
   return (
     <>
       <div className="projects" id="projectsPage">
@@ -15,10 +42,10 @@ export default function Projects() {
                 target="_blank"
               >
                 <Image
-                  src="/PortfolioSnapshot.png"
+                  src={portfolioSnapshot}
                   alt="PortfolioSnapshot"
-                  width={240}
-                  height={320}
+                  width={imageWidth}
+                  height={imageHeight}
                 />
               </Link>
             </div>
