@@ -1,5 +1,5 @@
 .projects {
-  height: 2000px;
+  height: 3200px;
   background-color: #7c7c7c;
   color: #ffffff;
   display: flex;
@@ -87,7 +87,7 @@
 
 @media (max-width: 899.9px) {
   .projects {
-    height: 2900px;
+    height: 4700px;
   }
 
   .projectContainer {

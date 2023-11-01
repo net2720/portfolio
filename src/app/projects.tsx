@@ -22,12 +22,16 @@ export default function Projects() {
 
   let portfolioSnapshot = '/PortfolioSnapshotPC.png';
   let iloveRefactor = '/iloveRefactorPC.png';
+  let ilove = '/ilovePC.png';
+  let modakbul = '/modakbulPC.png';
   let imageWidth = 240;
   let imageHeight = 320;
 
   if (screenWidth < 900) {
     portfolioSnapshot = '/PortfolioSnapshotMobile.png';
     iloveRefactor = '/iloveRefactorMobile.png';
+    modakbul = '/modakbulMobile.png';
+    ilove = '/iloveMobile.png';
     imageWidth = 320;
     imageHeight = 240;
   }
@@ -157,6 +161,84 @@ export default function Projects() {
                 <div className="stacks">
                   HTML, CSS, React, TypeScript, NestJS, MySQL
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projectContainer">
+          <div className="projectForm">
+            <div className="projectImage">
+              <Link href="http://125.188.246.81:3000" target="_blank">
+                <Image
+                  src={ilove}
+                  alt="ilove"
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </Link>
+            </div>
+            <div className="line"></div>
+            <div className="projectIntroduceForm">
+              <div className="projectTitle">아이사랑</div>
+              <div className="projectIntroduce">
+                부트캠프 당시 2차 프로젝트 완성본입니다.
+                <br />
+                <br />
+                병원 검색 및 병원 진료 정보 그리고 예약을 관리하는 웹사이트를
+                기획하여 제작된 프로젝트입니다.
+                <br />
+                <br />
+                당시 Back-end Part중 User / Admin / Kid / Review API 구현 및
+                전체 파트 API별 부하 테스트를 담당하였습니다.
+                <br />
+                <br />
+                기존 Node.js와 Express를 벗어나서 NestJS라는 새로운 framework를
+                사용할 수 있는 계기가 되었고 PrismaORM 그리고 SQL을 사용하는 DB
+                등 모든 것이 저에게 있어서는 새로운 시도였습니다.
+              </div>
+              <div className="stackForm">
+                <div className="stackTitle">사용한 기술</div>
+                <div className="stacks">
+                  TypeScript, NestJS, PrismaORM, MySQL
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projectContainer">
+          <div className="projectForm">
+            <div className="projectImage">
+              <Link href="https://github.com/net2720/modakbul" target="_blank">
+                <Image
+                  src={modakbul}
+                  alt="modakbul"
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </Link>
+            </div>
+            <div className="line"></div>
+            <div className="projectIntroduceForm">
+              <div className="projectTitle">모닥불 쇼핑몰</div>
+              <div className="projectIntroduce">
+                부트캠프 당시 1차 프로젝트 완성본입니다.
+                <br />
+                <br />
+                당시 Back-end Part중 Cart API 구현을 담당하였습니다.
+                <br />
+                <br />
+                JavaScript를 활용한 첫 프로젝트가 되었습니다. express를 이용하여
+                back-end API를 구현하였고 MongoDB를 활용하여 Data를 참조하여
+                활용하는 방법에 대해서 익힐 수 있었습니다.
+                <br />
+                <br />
+                짧은 제작 기간과 첫 프로젝트 당시의 지식의 한계로 많은 아쉬움과
+                쇄신의 계기가 된 프로젝트 입니다. 현 링크는 프로젝트 이후 간단한
+                리팩토링을 거친 부분을 링크해 두었습니다.
+              </div>
+              <div className="stackForm">
+                <div className="stackTitle">사용한 기술</div>
+                <div className="stacks">JavaScript, Node.js, MongoDB</div>
               </div>
             </div>
           </div>
