@@ -58,6 +58,9 @@ export default function Projects() {
             <div className="line"></div>
             <div className="projectIntroduceForm">
               <div className="projectTitle">포트폴리오 웹사이트</div>
+              <div className="projectTime">
+                <span className="boldText">기간 :</span> 2023.10
+              </div>
               <div className="projectIntroduce">
                 포트폴리오 용도로 제작한 개인 웹 사이트 입니다.
                 <br />
@@ -99,6 +102,9 @@ export default function Projects() {
             <div className="line"></div>
             <div className="projectIntroduceForm">
               <div className="projectTitle">NextJS Todo-list</div>
+              <div className="projectTime">
+                <span className="boldText">기간 :</span> 2023.09
+              </div>
               <div className="projectIntroduce">
                 NextJS를 익히기 위해서 제작한 토이프로젝트입니다.
                 <br />
@@ -139,6 +145,9 @@ export default function Projects() {
             <div className="line"></div>
             <div className="projectIntroduceForm">
               <div className="projectTitle">아이사랑 리팩토링</div>
+              <div className="projectTime">
+                <span className="boldText">기간 :</span> 2023.07
+              </div>
               <div className="projectIntroduce">
                 부트캠프 당시 2차 프로젝트 이후 2인 협업하여 리팩토링한 프로젝트
                 입니다.
@@ -168,7 +177,10 @@ export default function Projects() {
         <div className="projectContainer">
           <div className="projectForm">
             <div className="projectImage">
-              <Link href="http://125.188.246.81:3000" target="_blank">
+              <Link
+                href="https://github.com/net2720/iloveBack-end"
+                target="_blank"
+              >
                 <Image
                   src={ilove}
                   alt="ilove"
@@ -180,6 +192,9 @@ export default function Projects() {
             <div className="line"></div>
             <div className="projectIntroduceForm">
               <div className="projectTitle">아이사랑</div>
+              <div className="projectTime">
+                <span className="boldText">기간 :</span> 2023.05.29 ~ 2023.06.16
+              </div>
               <div className="projectIntroduce">
                 부트캠프 당시 2차 프로젝트 완성본입니다.
                 <br />
@@ -220,6 +235,9 @@ export default function Projects() {
             <div className="line"></div>
             <div className="projectIntroduceForm">
               <div className="projectTitle">모닥불 쇼핑몰</div>
+              <div className="projectTime">
+                <span className="boldText">기간 :</span> 2023.04.17 ~ 2023.04.28
+              </div>
               <div className="projectIntroduce">
                 부트캠프 당시 1차 프로젝트 완성본입니다.
                 <br />
