@@ -64,7 +64,7 @@ export default function Projects() {
               <div className="projectIntroduce">
                 포트폴리오 용도로 제작한 개인 웹 사이트 입니다.
                 <br />
-                지금 현재 보고 계신 페이지에 해당합니다.
+                현재 보고 계신 페이지에 해당합니다.
                 <br />
                 <br />팀 프로젝트 위주로 진행한 프로젝트가 많아 개인 만의
                 페이지를 만들어 보기 위하여 제작하였습니다.
